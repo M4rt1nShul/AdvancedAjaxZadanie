@@ -32,6 +32,10 @@
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Customer" asp-action="Index">Customers</a>
+                        </li>
+
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
@@ -41,6 +45,9 @@
     </header>
     <div class="container">
         <main role="main" class="pb-3">
+
+			<partial name="_CreateModalDialog" />
+
             @RenderBody()
         </main>
     </div>
